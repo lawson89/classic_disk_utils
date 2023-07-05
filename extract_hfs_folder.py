@@ -34,6 +34,7 @@ def main():
             if image_hfs_folder == hfs_folder:
                 obj.write_folder(local_folder)
                 common.ok()
+                found_hfs_folder = True
                 break
     if not found_hfs_folder:
         common.fail(f'Unable to find {hfs_folder} on {hfs_image}')
